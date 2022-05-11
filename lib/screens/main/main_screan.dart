@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:whats_fake_responsivo/components/side_menu.dart';
 import 'package:whats_fake_responsivo/responsive.dart';
+import 'package:whats_fake_responsivo/screens/email/email_screen.dart';
+import 'package:whats_fake_responsivo/screens/main/components/email_card.dart';
+import 'package:whats_fake_responsivo/screens/main/components/list_of_email.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -46,11 +50,17 @@ class _MainScreenState extends State<MainScreen> {
             ),
             Expanded(
               flex: _size.width > 1340 ? 3 : 5,
-              child: ListOfEmails(),
+              //child: ListOfEmails(),
+              child: Container(
+                color: Colors.deepOrangeAccent,
+              ),
             ),
             Expanded(
               flex: _size.width > 1340 ? 8 : 10,
-              child: EmailScreen(),
+              //child: EmailScreen(),
+              child: Container(
+                color: Colors.tealAccent[400],
+              ),
             ),
           ],
         ),
