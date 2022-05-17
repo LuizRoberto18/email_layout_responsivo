@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 import 'package:whats_fake_responsivo/models/email.dart';
 
 import '../../../constants.dart';
@@ -79,8 +78,8 @@ class EmailCard extends StatelessWidget {
                           ),
                           SizedBox(height: 5),
                           if (email!.isAttachmentAvailable!)
-                            WebsafeSvg.asset(
-                              "assets/Icons/Paperclip.svg",
+                            Icon(
+                              Icons.attach_file_sharp,
                               color: isActive ? Colors.white70 : kGrayColor,
                             ),
                         ],
@@ -125,13 +124,13 @@ class EmailCard extends StatelessWidget {
               ),
             if (email!.tagColor! != null)
               Positioned(
-                  top: 0,
-                  left: 8,
-                  child: WebsafeSvg.asset(
-                    "assets/Icons/Markup filled.svg",
-                    height: 18,
-                    color: email!.tagColor!,
-                  )),
+                top: 0,
+                left: 8,
+                child: Icon(
+                  Icons.bookmark,
+                  color: email!.tagColor!,
+                ),
+              ),
           ],
         ),
       ),

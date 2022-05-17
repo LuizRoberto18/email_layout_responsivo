@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:websafe_svg/websafe_svg.dart';
 import 'package:whats_fake_responsivo/components/side_menu_item.dart';
 import 'package:whats_fake_responsivo/components/tags.dart';
 import 'package:whats_fake_responsivo/constants.dart';
@@ -48,7 +47,7 @@ class _SideMenuState extends State<SideMenu> {
                 ),
                 color: kPrimaryColor,
                 onPressed: () {},
-                icon: WebsafeSvg.asset("assets/Icons/Edit.svg", width: 16),
+                icon: Icon(Icons.edit_sharp, color: Colors.white),
                 label: Text(
                   "New message",
                   style: TextStyle(color: Colors.white),
@@ -61,23 +60,23 @@ class _SideMenuState extends State<SideMenu> {
                 height: kDefaultPadding,
               ),
               FlatButton.icon(
-                minWidth: double.infinity,
-                padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                color: kBgDarkColor,
-                onPressed: () {},
-                label: Text(
-                  "Get Messages",
-                  style: TextStyle(color: kTextColor),
-                ),
-                icon: WebsafeSvg.asset("assets/Icons/Download.svg", width: 16),
-              ).addNeumorphism(),
+                      minWidth: double.infinity,
+                      padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      color: kBgDarkColor,
+                      onPressed: () {},
+                      label: Text(
+                        "Get Messages",
+                        style: TextStyle(color: kTextColor),
+                      ),
+                      icon: Icon(Icons.file_download_outlined))
+                  .addNeumorphism(),
               SizedBox(height: kDefaultPadding * 2),
               //Menu Item
               SideMenuItem(
-                iconSrc: "assets/Icons/Inbox.svg",
+                iconSrc: Icons.move_to_inbox_rounded,
                 title: "inbox",
                 press: () {},
                 isActive: true,
@@ -86,19 +85,19 @@ class _SideMenuState extends State<SideMenu> {
               SideMenuItem(
                 press: () {},
                 title: "Sent",
-                iconSrc: "assets/Icons/Send.svg",
+                iconSrc: Icons.send_sharp,
                 isActive: false,
               ),
               SideMenuItem(
                 press: () {},
                 title: "Drafts",
-                iconSrc: "assets/Icons/File.svg",
+                iconSrc: Icons.file_copy_sharp,
                 isActive: false,
               ),
               SideMenuItem(
                 press: () {},
                 title: "Deleted",
-                iconSrc: "assets/Icons/Trash.svg",
+                iconSrc: Icons.delete_sharp,
                 isActive: false,
                 showBorder: false,
               ),

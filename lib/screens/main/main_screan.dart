@@ -25,7 +25,7 @@ class _MainScreenState extends State<MainScreen> {
       // once our width is less then 1300 then it start showing errors
       // Now there is no error if our width is less then 1340
       body: Responsive(
-        mobile: Container(),
+        mobile: ListOfEmails(),
         //Now we are on tablet
         // right now we dont have any acess of our side menu
         //lets add a menu icon there
@@ -50,17 +50,11 @@ class _MainScreenState extends State<MainScreen> {
             ),
             Expanded(
               flex: _size.width > 1340 ? 3 : 5,
-              //child: ListOfEmails(),
-              child: Container(
-                color: Colors.deepOrangeAccent,
-              ),
+              child: ListOfEmails(),
             ),
             Expanded(
               flex: _size.width > 1340 ? 8 : 10,
-              //child: EmailScreen(),
-              child: Container(
-                color: Colors.tealAccent[400],
-              ),
+              child: EmailScreen(),
             ),
           ],
         ),

@@ -33,22 +33,22 @@ List<Email> emails = List.generate(
 
 List<dynamic> demo_data = [
   {
-    "name": "Apple",
-    "image": "assets/images/user_1.png",
-    "subject": "iPhone 12 is here",
-    "isAttachmentAvailable": false,
-    "isChecked": true,
-    "tagColor": Color.fromARGB(255, 226, 7, 7),
-    "time": "Now"
-  },
-  {
     "name": "Elvia Atkins",
     "image": "assets/images/user_2.png",
-    "subject": "Inspiration for our new home",
-    "isAttachmentAvailable": true,
+    "subject": "Youy project has been evaluated",
+    "isAttachmentAvailable": false,
     "isChecked": false,
-    "tagColor": Color.fromARGB(255, 228, 12, 217),
+    "tagColor": Color.fromARGB(255, 255, 6, 81),
     "time": "15:32"
+  },
+  {
+    "name": "Lorena",
+    "image": "assets/images/user_model.jpg",
+    "subject": "Inspiration for our new home",
+    "isAttachmentAvailable": false,
+    "isChecked": false,
+    "tagColor": Color.fromARGB(255, 136, 0, 113),
+    "time": "9:58"
   },
   {
     "name": "Marvin Kiehn",
@@ -56,7 +56,7 @@ List<dynamic> demo_data = [
     "subject": "Business-focused empowering the world",
     "isAttachmentAvailable": true,
     "isChecked": false,
-    "tagColor": Color.fromARGB(255, 158, 235, 16),
+    "tagColor": Color.fromARGB(255, 29, 5, 243),
     "time": "14:27",
   },
   {
@@ -69,11 +69,20 @@ List<dynamic> demo_data = [
     "time": "10:43"
   },
   {
-    "name": "Elenor Bauch",
+    "name": "Apple",
+    "image": "assets/images/user_1.png",
+    "subject": "New job opportunities",
+    "isAttachmentAvailable": true,
+    "isChecked": false,
+    "tagColor": Color.fromARGB(255, 250, 171, 0),
+    "time": "9:58"
+  },
+  {
+    "name": "Cuca beludo Bauch",
     "image": "assets/images/user_5.png",
     "subject": "New job opportunities",
     "isAttachmentAvailable": false,
-    "isChecked": false,
+    "isChecked": true,
     "tagColor": Color(0xFF3A6FF7),
     "time": "9:58"
   }

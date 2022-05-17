@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 
 import '../constants.dart';
 
@@ -14,9 +13,9 @@ class Tags extends StatelessWidget {
       children: [
         Row(
           children: [
-            WebsafeSvg.asset("assets/Icons/Angle down.svg", width: 16),
+            Icon(Icons.keyboard_arrow_down),
             SizedBox(width: kDefaultPadding / 4),
-            WebsafeSvg.asset("assets/Icons/Markup.svg", width: 20),
+            Icon(Icons.bookmark_border_sharp, color: Colors.black54),
             SizedBox(width: kDefaultPadding / 2),
             Text(
               "Tags",
@@ -55,9 +54,8 @@ class Tags extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(kDefaultPadding * 1.5, 10, 0, 10),
         child: Row(
           children: [
-            WebsafeSvg.asset(
-              "assets/Icons/Markup filled.svg",
-              height: 18,
+            Icon(
+              Icons.bookmark,
               color: color!,
             ),
             SizedBox(width: kDefaultPadding / 2),

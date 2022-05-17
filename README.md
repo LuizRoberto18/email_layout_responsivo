@@ -1,4 +1,4 @@
-# whats_fake_responsivo
+# email_fake_responsivo
 
 A new Flutter project.
 

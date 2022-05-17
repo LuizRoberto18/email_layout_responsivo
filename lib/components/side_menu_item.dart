@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:websafe_svg/websafe_svg.dart';
-
 import '../constants.dart';
 import 'counter_badge.dart';
 
 class SideMenuItem extends StatelessWidget {
   final bool? isActive, isHover, showBorder;
   final int? itemCount;
-  final String iconSrc, title;
+  final String title;
+  final IconData? iconSrc;
   final VoidCallback press;
 
   const SideMenuItem({
@@ -31,10 +30,7 @@ class SideMenuItem extends StatelessWidget {
         child: Row(
           children: [
             (isActive! || isHover!)
-                ? WebsafeSvg.asset(
-                    "assets/Icons/Angle right.svg",
-                    width: 15,
-                  )
+                ? Icon(Icons.arrow_forward_ios_rounded, size: 15)
                 : SizedBox(width: 15),
             SizedBox(width: kDefaultPadding / 4),
             Expanded(
@@ -48,11 +44,11 @@ class SideMenuItem extends StatelessWidget {
                     : null,
                 child: Row(
                   children: [
-                    WebsafeSvg.asset(
+                    Icon(
                       iconSrc,
-                      height: 20,
                       color:
                           (isActive! || isHover!) ? kPrimaryColor : kGrayColor,
+                      size: 24,
                     ),
                     SizedBox(width: kDefaultPadding * 0.75),
                     Text(
